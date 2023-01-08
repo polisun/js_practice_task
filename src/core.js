@@ -5,18 +5,14 @@ function isInteger(n) {
 
 //Напишите функцию, которая возвращает массив четных чисел от 2 до 20 включительно
 function even() {
-    let arr = [
-        2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-    ];
-    let b = [];
+    const result = [];
 
-    for (var i = 0, j = 0; i < arr.length && j < arr.length; i++) {
-        if (arr[i] % 2 === 0) {
-            b[j] = arr[i];
-            j++;
+    for (var i = 1; i <= 20; i++) {
+        if (i % 2 === 0) {
+            result.push(i);
         }
     }
-    return b;
+    return result;
 }
 
 //Напишите функцию, считающую сумму чисел до заданного используя цикл
